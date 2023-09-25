@@ -1,0 +1,33 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+root = true
+
+[*]
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+max_line_length = 160
+
+[*.java]
+indent_style = space
+indent_size = 4
+#https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties#ideas-for-domain-specific-properties
+wildcard_import_limit = 100
+#https://github.com/ec4j/editorconfig-java-domain
+java_class_count_to_use_import_on_demand = 100
+#https://youtrack.jetbrains.com/issue/IDEA-212525#focus=streamItem-27-3521523.0-0
+#https://www.jetbrains.com/help/idea/configuring-code-style.html
+ij_java_names_count_to_use_import_on_demand = 100
+ij_java_align_multiline_chained_methods = false
+ij_java_method_call_chain_wrap = split_into_lines
+
+[*.json]
+indent_style = space
+indent_size = 2
+
+[*.xml]
+indent_style = space
+indent_size = 4
+
+[Makefile]
+indent_style = tab
